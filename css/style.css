@@ -1,0 +1,612 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 28px;
+    line-height: 130%;
+    color: rgb(176 3 189);
+    font-weight: 600;
+    margin: 30px 0 ;
+}
+b{
+    font-weight: 600;
+} 
+img{
+    width: 100%;
+    display: block;
+}
+.logo{
+    max-width: 200px;
+}
+P{
+    font-size: 18px;
+    line-height: 140%;
+}
+.nav-item{
+    display: flex;
+    gap: 30px;
+}
+.nav-item a {
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #2f2f2f;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.js-nums p{
+    font-size: 28px;
+    color: #095a06;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-items: center;
+}
+.js-nums span{
+    color: rgb(31, 205, 11);
+    font-size: 50px;
+    font-weight: 600;
+    display: block;
+}
+.js-nums{
+    position: relative;
+    height: 60px;
+}
+.js-nums p {
+    opacity: 0; /* Начальная прозрачность элементов */
+    transition: opacity 0.5s ease; /* Плавность перехода */
+    position: absolute; /* Абсолютное позиционирование для слайда */
+}
+
+.js-nums p.active {
+    opacity: 1; /* Показать элемент */
+}
+.header-content{
+    padding: 60px 0 100px;
+  
+}
+.header-content>p, .header-content h1{
+      max-width: 60%;
+}
+header{
+    background: linear-gradient(103deg, rgb(255, 255, 255) 20%, rgb(65 100 227) 49%, rgb(175, 4, 188) 96%);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+   
+}
+header>div{
+     background: url(../images/cript.png) no-repeat;
+    background-size: 40%;
+    background-position: right;
+    position: relative;
+    z-index: 2;
+}
+.btn-by{
+    padding: 20px ;
+    display: inline-block;
+    background: linear-gradient(165deg, rgb(36, 87, 242) 14%, rgb(25, 69, 231) 28%, rgb(175, 4, 188) 67%);
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sc-item{
+   max-width: 200px;
+   padding: 20px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   box-shadow: inset 0 3px 20px #2f2f2f;
+  }
+  .sc-coinlogo{
+    max-width: 60px;
+    margin: 0 auto;
+  }
+.bold-font{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
+.c-green1 span{
+    font-size: 22px;
+    color: blueviolet;
+}
+.sc-btn{
+    padding: 10px;
+    font-size: 12px;
+    background: #089e03;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .3s linear;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.sc-btn:hover{
+    background: #c52805;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.sdelki>div>p{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 70px;
+    font-weight: 500;
+}
+.cripto-box{
+    background: url(../images/sdelki_bg.svg) no-repeat; 
+    padding: 0 0 80px;
+    background-size: 64%;
+    background-position: bottom;
+}
+.swiper-pagination-bullet-active{
+    background: #af03bd;
+}
+.swiper-wrapper{
+    margin-top: 70px;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    position: relative;
+    top: auto;
+    background: #ffffffa0;
+    max-width: 300px;
+    margin:  0 auto;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.course-cript{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+.course-cript>div>p{
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-weight: 500;
+}
+.list-student{
+    padding: 20px;
+    box-shadow: 0 2px 20px #d3d3d3;
+    background: #fff;
+}
+.list-student h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-student h4 span{
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #444;
+}
+.list-student p{
+    margin: 0 0 40px 40px;
+}
+.list-student>li>span{
+    color: #fff; 
+    background: #444;
+    padding:  20px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    min-width: 160px;
+    text-align: center;
+}
+.list-student>li{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.list-student li:nth-child(2) h4 span{
+    background: #af03bd;
+}
+.list-student>li:nth-child(2)>span{
+    background: #af03bd;
+}
+.list-student li:nth-child(3) h4 span{
+    background: #0635cd;
+}
+.list-student>li:nth-child(3)>span{
+    background: #0635cd;
+}
+.list-student>li+li+li p {
+    margin-bottom: 0;
+}
+.whay-we{
+    padding: 80px 0;
+}
+.list-we img{
+    width: 70px;
+    margin: 0 auto;
+}
+.list-we h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0 20px;
+}
+.list-we p{
+    font-size: 14px;
+}
+.list-we {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 70px;
+}
+.list-we li{
+    box-shadow: inset 0 3px 20px #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.line-nums{
+    padding: 60px 0;
+    background: linear-gradient(165deg, rgb(36, 87, 242) 14%, rgb(25, 69, 231) 28%, rgb(175, 4, 188) 67%);
+}
+.line-nums h2{
+    color: #fff;
+}
+.reviewsSwiper .swiper-slide{
+    width: 300px;
+    padding:40px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow:inset 0 3px 20px #559afb ;
+}
+.reviewsSwiper .swiper-slide h5{
+    font-weight: 600;
+    margin: 0 0 30px;
+}
+.reviewsSwiper .swiper-slide{
+    flex-direction: column;
+}
+.reviews{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+.faq-block{
+    padding: 80px 0;
+}
+.faq-block h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0635cd;
+    margin: 0 0 10px;
+}
+.faq-block p{
+    margin-bottom: 30px;
+}
+.form-container{
+    padding: 60px 0;
+    background: linear-gradient(165deg, rgb(36, 87, 242) 14%, rgb(25, 69, 231) 28%, rgb(175, 4, 188) 67%);
+}
+.form-container h2{
+    color: #fff;
+}
+.form-container>div>p{
+    padding: 10px;
+    background: #ffffff79;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px #fff;
+    font-weight: 600;
+    font-size: 14px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.form{
+    padding:40px 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow:inset 0 3px 20px #559afb ;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+}
+.form-item input{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 0 0 20px;
+    box-shadow:inset 0 3px 10px #dc7aee ;
+}
+input[ type="submit" ]{
+    width: 100%;
+    background: #af03bd;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.sogl{
+    font-size: 12px;
+    text-align: center;
+    line-height: 130%;
+    margin-top: 6px;
+}
+footer{
+    padding: 60px 0 20px;
+    background: #f2f2f2;
+}
+footer a{
+    color: #444;
+}
+footer p{
+    color: #444;
+}
+.whay-we .btn-by{
+    margin: 30px auto;
+    display: block;
+    max-width: 200px;
+}
+footer .logo{
+    margin: 0 auto 20px;
+}
+footer h2{
+    font-size: 20px;
+    opacity: .7; 
+}
+.info-reg {
+    margin: 0 0 30px;
+}
+.list-contact {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d7d7d7;
+    margin-bottom: 20px;
+}
+.list-contact a{
+    color: #0635cd;
+}
+@media screen and (max-width:1024px) {
+    header{
+        background-size: 100%;
+    }
+    .cripto-box{
+        background-size: 97%;
+    }
+    header>div{
+        background-size: 71%;
+        background-position: 124%;
+    }
+    .js-nums{
+        padding: 10px;
+        
+        border-radius: 10px;
+        height: 100px;
+        width: 686px;
+        display: block;
+    }
+    .js-nums p{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 924px) {
+    .list-we{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    header{
+        background: linear-gradient(103deg, rgb(255, 255, 255) -4%, rgb(65 100 227) 49%, rgb(175, 4, 188) 96%);
+        padding-bottom: 50px;
+    }
+    .js-nums p{
+        width: 100%;
+    }
+    .js-nums span{
+        color: rgb(25, 171, 9);
+        text-shadow: 0 2px 2px #000;
+    }
+    .js-nums{
+        width: 100%;
+        box-sizing: border-box;
+        height: 150px;
+        padding: 0;
+    }
+    .nav-item a{
+        font-size: 14px;
+    }
+    .container{
+        padding: 0 16px;
+    }
+    .list-student{
+        padding: 20px 10px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .logo{
+        max-width: 140px;
+    }
+    header>div{
+        background-position:  bottom center;   
+        background-size: 100%; 
+    }
+    h2{
+        font-size: 22px;
+        line-height: 130%;
+    }
+    .reviews h2{
+        margin: 0;
+    }
+    .header-content>p, .header-content h1{
+        max-width: 100%;
+    }
+    .header-content{
+        background: #ffffff7b;
+        padding: 20px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .faq-block h4{
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .faq-block p{
+        font-size: 12px;
+    }
+    .sdelki>div>p{
+        max-width: 600px;
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .sc-item{
+        max-width: 160px;
+    }
+    .list-student p{
+        margin: 0 020px 20px !important;
+    }
+    .list-student>li{
+        flex-direction: column;
+        gap: 0;
+        margin: 0 0 30px;
+    }
+    .cripto-box{
+        background-size: 156%;
+    }
+    .js-nums p{
+        font-size: 24px;
+    }
+    .list-contact{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    h1{
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    footer h2{
+        font-size: 18px;
+    }
+    .info-reg p{
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    footer a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 575px){
+    .list-we{
+        grid-template-columns: 1fr;
+    }
+    .nav-item>li:first-child{
+        display: none;
+    }
+    .cripto-box {
+        background-size: 186%;
+
+    }
+}
